@@ -1,0 +1,345 @@
+body{
+    font-family: 'Arial', sans-serif;
+    border-width: 5px;
+    margin: 0;
+    padding: 0;
+    }
+ #header{
+        grid-area:header ;
+        display: flex;
+        flex-direction: row;
+        background-color: #623a3a;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid #F7F9F9; /* Updated border */
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+a {
+    text-decoration: none;
+    color: white;
+}
+.menu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+  
+p {
+    
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(44, 1, 1); 
+    line-height: 1.5;
+    text-align: center; 
+    text-decoration: none; 
+    letter-spacing: 1px;
+    word-spacing: 2px;
+  }
+  
+    #image2{
+        height:55px;
+    }
+
+    li {
+        list-style: none;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        font-size: 16px;
+        margin-right: 20px;
+        
+    }
+       
+main {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto ;
+    grid-template-areas:
+    "header "
+    "about"
+    "education"
+    "projects"
+    "experience"
+    "blogs"
+    "footer";
+}
+
+.section {
+    background-color:#c6b9b9; /* Background color for each section */
+    padding: 10px; /* Add padding to each section */
+    text-align: center; /* Center the content in each section */
+    border: 5px solid #F7F9F9; /* Updated border */
+    border-radius: 5px;
+     /* Make sections take up the full height of the row */
+}
+.section h3 {
+    text-align:left;
+    margin: 0;
+    padding: 10px 0;
+    color: #0e0505;
+    border-radius: 5px;
+}
+
+#about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns, one for the image and one for box0 */
+    grid-template-areas: 
+    "h3  h3"
+    "image0 box"; /* Define the grid areas */ 
+    column-gap: 10px;
+}
+#about h3{
+    grid-area: h3;
+}
+ #image0 {
+    grid-area: image0; /* Assign the image to the 'image1' area */
+    padding-top: inherit;
+}
+
+#box {
+    grid-area: box; /* Assign box0 to the 'box' area */
+    margin: 10px;
+    padding: inherit;
+    background-color: #FFFFCC;
+    text-decoration: none;
+    border-radius: 10px;
+    display: grid;
+    flex-direction: row;
+    border: 2px solid #F7F9F9;
+    max-height: 300px; /* Set a maximum height */
+    overflow: auto; /* Add a scroll bar if the content exceeds the maximum height */
+}
+
+#education {
+    grid-area: education;
+}
+#education .box1 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFCC;
+    color: black; 
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #F7F9F9;
+}
+
+
+
+#projects {
+    grid-area: projects;
+}
+#projects .box2 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFCC;
+    text-decoration: none;
+    border-radius: 10px;
+    display: flex;
+    text-align: center;
+    border: 2px solid #F7F9F9;
+}
+
+#experience {
+    grid-area: experience;
+    
+}
+#experience .box3 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFCC;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-flex;
+    width: 200px;
+    flex-wrap: wrap;
+    border: 2px solid #F7F9F9;
+}
+
+
+#blogs {
+    grid-area: blogs;
+}
+
+/* Style for the box3 elements inside box4 */
+#blogs .box4 {
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFFFCC;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-flex;
+    width: 200px;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: solid #F7F9F9;
+}
+
+footer {
+    grid-area:footer ;
+        display: flex;
+        flex-direction: row;
+        background-color: #623a3a;
+        padding: 15px;
+        justify-content: space-between;
+        align-items: center;
+        border: 5px solid #F7F9F9; /* Updated border */
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+        flex-wrap: wrap;
+}
+footer p{
+    font-weight: bold;
+    color: #fff; 
+    text-align: center; 
+    letter-spacing: 0px; 
+    word-spacing: 0px;
+}
+.back-to-top {
+    display: block;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 9999;
+    outline: none;
+    background-color: #fff; 
+    color: rgb(25, 17, 2);
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.back-to-top:hover {
+    background-color: yellowgreen;
+}
+
+.back-to-top {
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.visible {
+    opacity: 1;
+}
+
+@media (max-width: 750px) {
+   
+    .menu {
+        display: block;
+    }
+    
+    .menu.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .menu.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .menu.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        right: 100%;
+        top: 65px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #a09696;
+        width: 90%;
+        text-align: center;
+        transition: 1s;
+        border: 2px solid #F7F9F9;
+    }
+    
+    .nav-item {
+        margin: 12px 0;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    #image2{
+        height:30px;
+    }
+    #about {
+        grid-template-columns: 1fr; /* Display about section as a single column */
+        grid-template-areas:
+        "h3"
+        "image0"
+        "box";
+    }
+    footer {
+        flex-direction: column; /* Stack footer links and content vertically */
+        align-items: center;
+        padding: 2px; /* Reduce footer padding */
+    }
+}
+
+@media only screen and (max-width: 500px) {
+ 
+    
+    body {
+        font-size: 14px; /* Adjust the font size for smaller screens */
+    }
+    main {
+        padding: 5px; /* Reduce padding on the main container */
+    }
+
+    #image2 {
+        height: 30px;
+         /* Adjust the header image size */
+    }
+
+    #education, #projects, #experience, #blogs {
+        grid-template-columns: 1fr; 
+    }
+
+    #experience .box3, #blogs .box4 {
+        display: flex; /* Change the display to block for smaller screens */
+        flex-direction: column;
+        text-align: center; /* Center the content in boxes */
+        width: auto;
+    }
+
+    #experience .box3 p, #blogs .box4 p {
+        margin: 10px 0; /* Add spacing between paragraphs */
+    }
+
+   
+}
+
+
+
+  

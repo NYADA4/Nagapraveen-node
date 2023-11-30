@@ -1,0 +1,48 @@
+{"cars": [{
+  "id":1,
+  "model": "Mercedes-Benz S-Class S 500",
+  "price": "13,500$",
+  "year": 1996,
+  "miles":14,
+  "stock": "NO",
+  "instock": false
+
+},
+
+{
+  "id":2,
+  "model": "Volkswagen Atlas 2.0T SE",
+  "price": "26,389$",
+  "year": 2021,
+  "miles":14255,
+  "stock": "YES",
+  "instock": true
+
+},
+{
+  "id":3,
+  "model": "Mazda CX-50 2.5 Turbo Meridian Edition",
+  "price": "35,400$",
+  "year": 2023,
+  "miles":145555,
+  "stock": "YES",
+  "instock": true
+},
+{
+  "id":4,
+  "model": "Toyota Tacoma Base",
+  "price": "19,936$",
+  "year": 2012,
+  "miles":5000055,
+  "stock": "YES",
+  "instock": true
+},
+{
+  "id":5,
+  "model": "Acura ILX Premium",
+  "price": "28,221$",
+  "year": 2022,
+  "miles":1425,
+  "stock": "NO",
+  "instock": false
+}]}
